@@ -1,0 +1,132 @@
+@font-face{
+    font-family:'Technology';
+    src: url('./fonts/Technology.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Festive';
+    src: url('./fonts/Festive-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+}
+
+audio {
+    display: none;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #005B50;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 64px;
+    font-style: oblique;
+    font-family: 'Festive', sans-serif;
+    color: #FF8FC4;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:#FFE4F846;
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.timer {
+    height: 40%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#timer-label {
+    font-size: 32px;
+}
+
+#time-left {
+    font-size: 72px;
+    letter-spacing: 3px;
+    font-family: 'Technology', sans-serif;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 30%;
+}
+
+.options {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options-controls {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.options-controls i {
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.options-controls i:active {
+    transform: translate(1px, 1px);
+}
+
+.options-controls i:hover {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.options-controls div {
+    font-size: 28px;
+}
+
+.controls {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.controls i {
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.controls i:active {
+    transform: translate(1px, 1px);
+}
+
+.controls i:hover {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
